@@ -1,3 +1,30 @@
 footer {
     position: fixed;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 20;
+}
+
+.maincolumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner {
+    width: 50%;
+}
+
+img {
+    width:100%;
+}
