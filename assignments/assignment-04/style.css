@@ -6,11 +6,16 @@ body{
 
 .flex-container{
     display:flex;
+    min-height: 100vh;
     flex-direction: column;
 }
 
+.item{
+    order:5
+}
+
 section{
-    flex-basis:75%;
+    flex: 1;
     background-color:aqua;
 }
 
