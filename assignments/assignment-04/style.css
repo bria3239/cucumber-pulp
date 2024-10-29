@@ -1,0 +1,49 @@
+body{
+    background-color: #eee8db;
+    color: #1b979b;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+}
+
+section{
+    flex-basis:75%;
+    background-color:aqua;
+}
+
+aside{
+    flex-basis: 25%;
+    background-color:lightcoral
+}
+    
+
+h1{
+    color:rgb(252, 7, 7);
+    text-align:left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2{
+    text-align:left;
+    font-size:60px;
+    font-weight: bold;
+    color:#1b979b
+}
+
+h3{
+    text-align:left;
+}
+
+h4{
+    text-align:left;
+}
+
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
