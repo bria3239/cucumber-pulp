@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200; /* Lighter weight */
+}
+
+#hot-take {
+    color:gray
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between the items */
+    justify-content: space-around;
+    margin: 0 auto; /* Centers the container on the page */
+    
+}
+
+/* Flex Item Styling */
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 20%; /* Takes up about 22% of the container's width (4 items per row) */
+    box-sizing: border-box;
+    min-width: 150px; /* Ensures the images don't shrink too much */
+    margin: 50px; /*makes images smaller */
+    max-width: 20%;
+    position: relative; /* Set relative positioning on the container */
+    width: 100%; /* Optional: Ensure the flex items fill the container */
+    height: auto; /* Optional: Adjust the height as needed */
+}
+
+/* Image Styling */
+.flex-item img {
+    width: 100%; /* Makes images responsive */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    opacity: 0; /* Makes the top image invisible by default */
+    transition: opacity 0.3s ease; /* Adds a smooth transition effect when the opacity changes */
+}
+
+/* Show the top image when hovering over the container */
+.flex-item:hover .top-image {
+    opacity: 1; /* Makes the top image fully visible on hover */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-end; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center; /* Center the text */
+    height: 300px; /* Take full viewport height */
+    padding: 20px; /* Add padding around the text */
+}
+
+.body-text-container {
+    display: flex; /* Use flexbox for easy vertical alignment */
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-end; /* Push the content to the bottom */
+    padding: 60px; /* Add padding around the text */
+    padding-left: 350px;
+    padding-right: 350px;
+    font-size: 18px;
+    border-bottom: .5px solid #333; /* Add a horizontal line at the bottom */
+    border-top: .5px solid #333;
+    line-height: 1.6;
+}
+
+.text-container h1 {
+    font-size: 30px; /* Font size based on viewport width */
+    line-height: 1.2; /* Adjust line height for better spacing */
+    max-width: 90%; /* Ensure the text doesn't overflow */
+    justify-content: flex-end; /* Push the content to the bottom */
+    align-items:center;
+    margin: 40px;
+    padding-left: 60px; /* Add some space between the header and subheading */
+    padding-right: 60px; /* Add some space between the header and subheading */
+
+}
+
+.subheading {
+    font-size: 12px; /* Make subheading smaller and responsive */
+    color: rgb(0, 47, 255);
+}
+
+
+#blue-box {
+    border: .5px solid rgb(0, 47, 255); 
+    background-color: rgb(230, 230, 230);
+}
+
+#red-box { 
+    border: .5px solid rgb(255, 0, 0);
+    background-color: rgb(230, 230, 230);
+}
+
+#green-box {
+    border: .5px solid rgb(0, 255, 38); 
+    background-color: rgb(230, 230, 230);
+}
+
+.header-blue-rectangle {
+    border: 1px solid rgb(0, 64, 255);
+    background-color: rgb(230, 230, 230);
+}
+
+
+#blue-line {
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+}
+
+#red-line{
+    text-decoration-color:red;
+    text-decoration-thickness: 2px;
+}
+
+#green-line {
+    text-decoration-color:chartreuse;
+    text-decoration-thickness: 2px;
+}
+
+mark {
+    background-color: yellow;
+}
